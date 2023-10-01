@@ -16,6 +16,7 @@ export default function CertificateCard(props) {
         rounded={'md'}
         objectFit={'contain'}
         alt={props.item.image}
+        boxSize={'full'}
       />
       <CertificateModal
         isOpen={props.isOpen}
