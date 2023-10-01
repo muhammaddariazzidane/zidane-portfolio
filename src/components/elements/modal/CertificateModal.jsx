@@ -25,7 +25,8 @@ export default function CertificateModal(props) {
         <ModalBody>
           <Image
             src={props.selectedCertificate.image}
-            sizes={'md'}
+            boxSize={'full'}
+            rounded={'md'}
             alt={props.selectedCertificate.image}
           />
         </ModalBody>
