@@ -1,0 +1,68 @@
+[
+  {
+    "id": 0,
+    "title": "Laravel Forum",
+    "description": "This project was inspired by Stack Overflow. I then learned Laravel 9 and attempted to create a simple forum using severalLaravel ecosystems, including Laravel, Breeze, Socialite, Scout, and third-party packages such as Laravel Turbolinks and LaravelNotify.",
+    "image": "img/forum.png",
+    "demo": "https://whyngebull.000webhostapp.com/",
+    "repo": "https://github.com/muhammaddariazzidane",
+    "techStack": [
+      {
+        "id": 0,
+        "tech": "icons/Laravel.svg"
+      },
+      {
+        "id": 1,
+        "tech": "icons/Tailwind.svg"
+      },
+      {
+        "id": 2,
+        "tech": "icons/Mysql.svg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Website BLT Management",
+    "description": "The Profile Website of Tambaksari Village serves as an informative platform that showcases the rich history, cultural heritage, and ongoing development initiatives of the village. In addition, Tambaksari Village actively manages the Direct Cash Assistance (BLT) program, a government initiative that provides financial support to eligible individuals and families. With a systematic data management system in place, the village administration ensures accurate beneficiary registration, verification processes, and efficient monitoring of the program's effectiveness. By combining the website's informative features and effective data management.    ",
+    "image": "img/tambaksari.png",
+    "demo": "https://desa-tambaksari.000webhostapp.com/",
+    "repo": "https://github.com/muhammaddariazzidane",
+    "techStack": [
+      {
+        "id": 0,
+        "tech": "icons/Ci.webp"
+      },
+      {
+        "id": 1,
+        "tech": "icons/Bootstrap.svg"
+      },
+      {
+        "id": 2,
+        "tech": "icons/Mysql.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Codeigniter blog",
+    "description": "This is the result of learning CodeIgniter 4, a simple blog CMS application.    ",
+    "image": "img/ciblog.png",
+    "demo": "https://desa-tambaksari.000webhostapp.com/",
+    "repo": "https://github.com/muhammaddariazzidane",
+    "techStack": [
+      {
+        "id": 0,
+        "tech": "icons/Ci.webp"
+      },
+      {
+        "id": 1,
+        "tech": "icons/Tailwind.svg"
+      },
+      {
+        "id": 2,
+        "tech": "icons/Mysql.svg"
+      }
+    ]
+  }
+]
