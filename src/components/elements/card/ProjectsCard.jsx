@@ -66,7 +66,6 @@ export default function ProjectsCard(props) {
           rightIcon={<ArrowForwardIcon boxSize={4} />}
           variant={'solid'}
           color={'#6366f1'}
-          borderColor={'#6366f1'}
           as={props.motion.a}
           bg={'transparent'}
           whileTap={{ scale: 0.9 }}
@@ -85,7 +84,7 @@ export default function ProjectsCard(props) {
           href={props.project.repo}
           aria-label={props.project.repo}
         >
-          <FaGithub size={20} />
+          <FaGithub size={24} />
         </props.motion.a>
       </CardFooter>
     </Card>

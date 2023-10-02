@@ -14,9 +14,10 @@ export default function CertificateModal(props) {
 
   return (
     <Modal
-      size={'3xl'}
+      size={{ lg: 'xl', base: 'sm' }}
       isOpen={props.isOpen}
       onClose={props.onClose}
+      motionPreset="slideInTop"
       isCentered
       closeOnEsc={true}
     >

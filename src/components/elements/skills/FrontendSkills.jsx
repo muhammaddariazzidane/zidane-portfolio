@@ -96,7 +96,7 @@ export default function FrontendSkills(props) {
         <Box
           as={props.motion.div}
           initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0, rotate: 60 }}
+          whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
           <SkillsImage image={'icons/React.svg'} size={14} />

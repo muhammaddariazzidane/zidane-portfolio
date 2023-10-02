@@ -10,9 +10,9 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { lazy, useState } from 'react';
+import { useState } from 'react';
 import certificates from '../services/certificate';
-const CertificateCard = lazy(() => import('./elements/card/CertificateCard'));
+import CertificateCard from './elements/card/CertificateCard';
 
 export default function Certificate() {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
