@@ -10,7 +10,7 @@ export default defineConfig({
     VitePWA({
       manifest: {
         name: 'Muhammad Dariaz Zidane',
-        short_name: 'ZidanePWA',
+        short_name: 'Zidane Portfolio',
         description: 'This is my personal website',
         theme_color: '#4f46e5',
         background_color: '#ddd',
@@ -111,6 +111,7 @@ export default defineConfig({
       webp: {
         // https://sharp.pixelplumbing.com/api-output#webp
         lossless: true,
+        quality: 80,
       },
     }),
   ],

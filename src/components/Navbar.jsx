@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { lazy } from 'react';
 const DarkModeBtn = lazy(() => import('./elements/button/DarkModeBtn'));
 const NavbarItemBtn = lazy(() => import('./elements/button/NavbarItemBtn'));
-const MenuItemBtn = lazy(() => import('./elements/button/MenuItemBtn'));
+import MenuItemBtn from './elements/button/MenuItemBtn';
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
