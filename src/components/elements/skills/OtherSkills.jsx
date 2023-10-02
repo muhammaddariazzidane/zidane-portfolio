@@ -12,18 +12,17 @@ export default function OtherSkills(props) {
     >
       <Center
         hideBelow={'lg'}
-        maxW="8rem"
+        maxW={'7rem'}
         rounded={'full'}
         w={'full'}
         bg="#4f46e5"
-        p={2}
-        h={12}
+        h={10}
         as={props.motion.div}
         initial={{ translateX: -50, opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
-        <Heading color={'white'} as={'h4'} size={'md'} fontStyle={'italic'}>
+        <Heading color={'white'} size={'sm'} fontStyle={'italic'}>
           Others
         </Heading>
       </Center>
@@ -41,7 +40,7 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Vscode.svg'} size={16} />
+          <SkillsImage image={'icons/Vscode.svg'} size={14} />
         </Box>
         <Box
           as={props.motion.div}
@@ -49,7 +48,7 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Git.svg'} size={16} />
+          <SkillsImage image={'icons/Git.svg'} size={14} />
         </Box>
 
         <Box
@@ -58,7 +57,7 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Axios.svg'} size={20} />
+          <SkillsImage image={'icons/Axios.svg'} size={14} />
         </Box>
         <Box
           as={props.motion.div}
@@ -66,7 +65,7 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Jest.svg'} size={20} />
+          <SkillsImage image={'icons/Jest.svg'} size={14} />
         </Box>
       </Flex>
     </Flex>
