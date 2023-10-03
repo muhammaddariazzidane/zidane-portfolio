@@ -12,7 +12,6 @@ export default function Experience() {
   });
   return (
     <>
-      {/* Education experience */}
       <Box>
         <Heading as={'h1'} mb={6} fontSize={'lg'}>
           My Education <MdSchool style={{ display: 'inline' }} />
@@ -24,7 +23,6 @@ export default function Experience() {
         </Stepper>
       </Box>
 
-      {/* internship experience */}
       <Box>
         <Heading as={'h1'} mb={6} fontSize={'lg'}>
           Internship Experience {''}

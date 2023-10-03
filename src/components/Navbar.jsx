@@ -12,9 +12,8 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { lazy } from 'react';
-const DarkModeBtn = lazy(() => import('./elements/button/DarkModeBtn'));
-const NavbarItemBtn = lazy(() => import('./elements/button/NavbarItemBtn'));
+import DarkModeBtn from './elements/button/DarkModeBtn';
+import NavbarItemBtn from './elements/button/NavbarItemBtn';
 import MenuItemBtn from './elements/button/MenuItemBtn';
 
 export default function Navbar() {
@@ -31,7 +30,7 @@ export default function Navbar() {
       <Container maxW="container.lg" py={4}>
         <Flex justify={'space-between'} alignItems={'center'}>
           <Box p={'2'}>
-            <Heading size={'md'}>M. Dariaz Zidane</Heading>
+            <Heading size={'md'}>Muhammad Dariaz Zidane</Heading>
           </Box>
 
           <Menu isLazy closeOnSelect={false}>

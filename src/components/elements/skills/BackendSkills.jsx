@@ -39,7 +39,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Py.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Py.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Python'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -47,7 +51,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Php.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Php.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'PHP'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -55,7 +63,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Mysql.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Mysql.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'MySQL'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -63,7 +75,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Expressjs.png'} size={14} />
+          <SkillsImage
+            image={'icons/Expressjs.png'}
+            size={{ lg: 12, base: 10 }}
+            title={'Express js'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -71,7 +87,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Flask.webp'} size={14} />
+          <SkillsImage
+            image={'icons/Flask.webp'}
+            size={{ lg: 12, base: 10 }}
+            title={'Flask'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -79,7 +99,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Ci.webp'} size={14} />
+          <SkillsImage
+            image={'icons/Ci.webp'}
+            size={{ lg: 12, base: 10 }}
+            title={'Codeigniter'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -88,7 +112,11 @@ export default function BackendSkills(props) {
           viewport={{ once: true }}
           _dark={{ color: 'red' }}
         >
-          <SkillsImage image={'icons/Laravel.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Laravel.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Laravel'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -96,7 +124,11 @@ export default function BackendSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Nodejs.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Nodejs.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Node js'}
+          />
         </Box>
       </Flex>
     </Flex>

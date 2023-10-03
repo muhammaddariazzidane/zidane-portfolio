@@ -1,17 +1,10 @@
-import {
-  AbsoluteCenter,
-  Box,
-  Button,
-  Container,
-  Flex,
-  Heading,
-  useToast,
-} from '@chakra-ui/react';
+import { Box, Button, Container, Flex, useToast } from '@chakra-ui/react';
 import { useRef, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
+import { sendEmail } from '../store/sendEmail';
 import ContactInput from './elements/input/ContactInput';
+import HeadingTitle from '../components/elements/Heading/HeadingTitle';
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -21,13 +14,12 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
+    sendEmail(
+      form.current,
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      import.meta.env.VITE_PUBLIC_KEY
+    )
       .then(() => {
         form.current.reset();
         toast({
@@ -44,7 +36,7 @@ export default function Contact() {
           position: 'top',
           title: 'Error!',
           description: error,
-          status: 'success',
+          status: 'error',
           duration: 9000,
           isClosable: true,
         });
@@ -55,33 +47,8 @@ export default function Contact() {
   };
 
   return (
-    <Box py={12} mt={5} pos={'relative'} id={'contact'}>
-      <Heading
-        as={motion.h1}
-        initial={{ translateY: 100 }}
-        whileInView={{ translateY: 0 }}
-        viewport={{ once: true }}
-        pos={'absolute'}
-        left={0}
-        right={0}
-        zIndex={'9'}
-        textAlign={'center'}
-        size={'lg'}
-      >
-        Contact me
-      </Heading>
-      <AbsoluteCenter
-        rounded={5}
-        bgGradient={'linear(to-b, #e0e7ff, white, white)'}
-        _dark={{ bgGradient: 'linear(to-b, #1e1b4b, gray.800, gray.800)' }}
-        zIndex={1}
-        top={16}
-        pt="5"
-        pb={16}
-        axis="both"
-        maxW={'40'}
-        w={'50%'}
-      ></AbsoluteCenter>
+    <Box py={{ lg: 12, base: 24 }} mt={5} pos={'relative'} id={'contact'}>
+      <HeadingTitle motion={motion} title={'Contact Me'} size={40} />
       <Container
         mt={'24'}
         maxW={'lg'}

@@ -13,12 +13,11 @@ import {
 import { ArrowForwardIcon, DownloadIcon } from '@chakra-ui/icons';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { lazy } from 'react';
-const ContactBtn = lazy(() => import('./elements/button/ContactBtn'));
-const DownloadCVBtn = lazy(() => import('./elements/button/DownloadCVBtn'));
-const LinkedinIcon = lazy(() => import('./elements/icon/LinkedinIcon'));
-const InstagramIcon = lazy(() => import('./elements/icon/InstagramIcon'));
-const GithubIcon = lazy(() => import('./elements/icon/GithubIcon'));
+import ContactBtn from './elements/button/ContactBtn';
+import DownloadCVBtn from './elements/button/DownloadCVBtn';
+import LinkedinIcon from './elements/icon/LinkedinIcon';
+import InstagramIcon from './elements/icon/InstagramIcon';
+import GithubIcon from './elements/icon/GithubIcon';
 
 export default function Hero() {
   return (
@@ -60,7 +59,7 @@ export default function Hero() {
             applications.
           </Text>
         </Box>
-        <Stack direction="row" justify={'center'} spacing={4} my={5}>
+        <Stack direction={'row'} justify={'center'} spacing={4} my={5}>
           <ContactBtn
             ArrowForwardIcon={ArrowForwardIcon}
             Button={Button}

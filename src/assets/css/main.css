@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth !important;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+}
+.image-zoom {
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-zoom:hover {
+  transform: scale(1);
+}

@@ -12,19 +12,20 @@ import {
   Kbd,
 } from '@chakra-ui/react';
 import SkillsImage from '../../images/SkillsImage';
-import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import { BiLinkExternal } from 'react-icons/bi';
 
 export default function ProjectModal(props) {
-  if (!props.selectedProject) {
+  const { onClose, isOpen, selectedProject, motion } = props;
+
+  if (!selectedProject) {
     return null;
   }
   return (
     <Modal
       isCentered
-      onClose={props.onClose}
-      isOpen={props.isOpen}
+      onClose={onClose}
+      isOpen={isOpen}
       motionPreset="slideInTop"
       closeOnEsc={true}
       size={'2xl'}
@@ -35,21 +36,22 @@ export default function ProjectModal(props) {
         <ModalBody>
           <Box pt={2} pb={3}>
             <Image
-              src={props.selectedProject.image}
+              src={selectedProject.image}
               rounded={'md'}
               objectFit={'contain'}
-              alt={props.selectedProject.image}
+              alt={selectedProject.image}
+              loading={'lazy'}
             />
           </Box>
           <Text as={'b'} fontSize={'2xl'}>
-            {props.selectedProject.title}
+            {selectedProject.title}
           </Text>
           <Flex my={3} gap={2}>
-            {props.selectedProject.techStack.map((tech, i) => (
+            {selectedProject.techStack.map((tech, i) => (
               <SkillsImage image={tech.tech} size={7} key={i} />
             ))}
           </Flex>
-          <Text fontSize={'md'}>{props.selectedProject.description}</Text>
+          <Text fontSize={'md'}>{selectedProject.description}</Text>
         </ModalBody>
         <ModalFooter gap={2} flex justifyContent={'space-between'}>
           <Flex gap={1} alignItems={'end'}>
@@ -59,26 +61,28 @@ export default function ProjectModal(props) {
             </Text>
           </Flex>
           <Flex gap={2} alignItems={'center'}>
-            <motion.a
+            <Box
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
               transition={{ ease: 'easeInOut' }}
               target={'_blank'}
-              aria-label={props.selectedProject.repo}
-              href={props.selectedProject.repo}
+              as={motion.a}
+              aria-label={selectedProject.repo}
+              href={selectedProject.repo}
             >
               <FaGithub size={26} />
-            </motion.a>
-            <motion.a
+            </Box>
+            <Box
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
               transition={{ ease: 'easeInOut' }}
-              target="_blank"
-              aria-label={props.selectedProject.demo}
-              href={props.selectedProject.demo}
+              target={'_blank'}
+              as={motion.a}
+              aria-label={selectedProject.demo}
+              href={selectedProject.demo}
             >
               <BiLinkExternal size={26} />
-            </motion.a>
+            </Box>
           </Flex>
         </ModalFooter>
       </ModalContent>

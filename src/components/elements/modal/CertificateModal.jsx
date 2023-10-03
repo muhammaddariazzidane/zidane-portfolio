@@ -8,15 +8,17 @@ import {
 } from '@chakra-ui/react';
 
 export default function CertificateModal(props) {
-  if (!props.selectedCertificate) {
+  const { isOpen, onClose, selectedCertificate } = props;
+
+  if (!selectedCertificate) {
     return null;
   }
 
   return (
     <Modal
       size={{ lg: 'xl', base: 'sm' }}
-      isOpen={props.isOpen}
-      onClose={props.onClose}
+      isOpen={isOpen}
+      onClose={onClose}
       motionPreset="slideInTop"
       isCentered
       closeOnEsc={true}
@@ -25,10 +27,11 @@ export default function CertificateModal(props) {
       <ModalContent>
         <ModalBody>
           <Image
-            src={props.selectedCertificate.image}
+            src={selectedCertificate.image}
             boxSize={'full'}
             rounded={'md'}
-            alt={props.selectedCertificate.image}
+            alt={selectedCertificate.image}
+            loading={'lazy'}
           />
         </ModalBody>
       </ModalContent>

@@ -13,6 +13,9 @@ export default function MenuItemBtn({ Link }) {
       <MenuItem as={'a'} aria-label={'Projects'} href={'#projects'}>
         Projects
       </MenuItem>
+      <MenuItem as={'a'} aria-label={'Projects'} href={'#skills'}>
+        Skills
+      </MenuItem>
       <MenuItem as={'a'} aria-label={'Contact'} href={'#contact'}>
         Contact
       </MenuItem>

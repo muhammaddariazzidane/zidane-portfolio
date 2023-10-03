@@ -48,17 +48,17 @@ export default function SkillSkeleton() {
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
           </Flex>
         </Flex>
         <Flex
@@ -89,14 +89,14 @@ export default function SkillSkeleton() {
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
           </Flex>
         </Flex>
         <Flex
@@ -127,9 +127,9 @@ export default function SkillSkeleton() {
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
-            <SkeletonCircle size={16} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
+            <SkeletonCircle size={12} />
           </Flex>
         </Flex>
       </Container>

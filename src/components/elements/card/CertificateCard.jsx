@@ -3,25 +3,29 @@ import { Box, Image } from '@chakra-ui/react';
 import CertificateModal from '../modal/CertificateModal';
 
 export default function CertificateCard(props) {
+  const { item, handleCertificateClick, isOpen, onClose, selectedCertificate } =
+    props;
+
   return (
     <Box
       cursor={'pointer'}
       w={'full'}
       maxW={'xs'}
-      onClick={() => props.handleCertificateClick(props.item)}
+      onClick={() => handleCertificateClick(item)}
     >
       <Image
-        src={props.item.image}
+        src={item.image}
         mx={'auto'}
         rounded={'md'}
         objectFit={'contain'}
-        alt={props.item.image}
+        alt={item.image}
         boxSize={'full'}
+        loading={'lazy'}
       />
       <CertificateModal
-        isOpen={props.isOpen}
-        onClose={props.onClose}
-        selectedCertificate={props.selectedCertificate}
+        isOpen={isOpen}
+        onClose={onClose}
+        selectedCertificate={selectedCertificate}
       />
     </Box>
   );

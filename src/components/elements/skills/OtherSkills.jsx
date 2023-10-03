@@ -40,7 +40,11 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Vscode.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Vscode.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Visual Studio Code'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -48,7 +52,11 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Git.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Git.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Git'}
+          />
         </Box>
 
         <Box
@@ -57,7 +65,11 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Axios.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Axios.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Axios'}
+          />
         </Box>
         <Box
           as={props.motion.div}
@@ -65,7 +77,11 @@ export default function OtherSkills(props) {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
         >
-          <SkillsImage image={'icons/Jest.svg'} size={14} />
+          <SkillsImage
+            image={'icons/Jest.svg'}
+            size={{ lg: 12, base: 10 }}
+            title={'Jest'}
+          />
         </Box>
       </Flex>
     </Flex>

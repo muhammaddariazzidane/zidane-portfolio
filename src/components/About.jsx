@@ -1,48 +1,14 @@
-import {
-  AbsoluteCenter,
-  Avatar,
-  Box,
-  Center,
-  Container,
-  Flex,
-  Heading,
-  Text,
-} from '@chakra-ui/react';
+import { Avatar, Box, Center, Container, Flex, Text } from '@chakra-ui/react';
 import { FaLinkedin } from 'react-icons/fa';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import { lazy } from 'react';
-const Experience = lazy(() => import('./Experience'));
+import HeadingTitle from './elements/Heading/HeadingTitle';
+import Experience from './Experience';
 
 export default function About() {
   return (
-    <Box py={{ lg: 12, base: 28 }} mt={5} pos={'relative'} id={'about'}>
-      <Heading
-        pos={'absolute'}
-        left={0}
-        right={0}
-        zIndex={'9'}
-        textAlign={'center'}
-        size={'lg'}
-        as={motion.h1}
-        initial={{ translateY: 100 }}
-        whileInView={{ translateY: 0 }}
-        viewport={{ once: true }}
-      >
-        About Me
-      </Heading>
-      <AbsoluteCenter
-        rounded={5}
-        bgGradient={'linear(to-b, #e0e7ff, white, white)'}
-        _dark={{ bgGradient: 'linear(to-b, #1e1b4b, gray.800, gray.800)' }}
-        zIndex={1}
-        top={{ lg: 16, base: 32 }}
-        pt="5"
-        pb={14}
-        axis="both"
-        maxW={'36'}
-        w={'50%'}
-      ></AbsoluteCenter>
+    <Box py={{ lg: 12, base: 24 }} mt={5} pos={'relative'} id={'about'}>
+      <HeadingTitle motion={motion} title={'About Me'} />
       <Container
         mt={'24'}
         as={motion.div}
