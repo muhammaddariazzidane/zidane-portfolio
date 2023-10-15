@@ -8,12 +8,18 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      injectRegister: 'auto',
+      registerType: 'autoUpdate',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+      },
       manifest: {
         name: 'Muhammad Dariaz Zidane',
         short_name: 'Zidane Portfolio',
         description: 'This is my personal website',
         theme_color: '#4f46e5',
-        background_color: '#ddd',
+        display: 'standalone',
+        background_color: '#030712',
         icons: [
           {
             src: 'icon-48.png',

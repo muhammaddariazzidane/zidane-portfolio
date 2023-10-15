@@ -19,13 +19,13 @@ export default function CertificateModal(props) {
       size={{ lg: 'xl', base: 'sm' }}
       isOpen={isOpen}
       onClose={onClose}
-      motionPreset="slideInTop"
+      motionPreset={'none'}
       isCentered
       closeOnEsc={true}
     >
-      <ModalOverlay />
-      <ModalContent>
-        <ModalBody>
+      <ModalOverlay bg={'blackAlpha.100'} />
+      <ModalContent shadow={'none'} rounded={'lg'}>
+        <ModalBody p={0}>
           <Image
             src={selectedCertificate.image}
             boxSize={'full'}

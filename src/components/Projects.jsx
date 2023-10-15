@@ -36,7 +36,7 @@ export default function Projects() {
         viewport={{ once: true }}
         flexWrap={'wrap'}
         mt={24}
-        gap={2}
+        gap={5}
         justify={'center'}
       >
         {projects?.map((project, index) => (
