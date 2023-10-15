@@ -27,21 +27,19 @@ export default function ProjectsCard(props) {
         bg: 'gray.900',
         _hover: {
           shadow: 'xl',
-          transform: 'scale(0.9)',
           transition: '.5s',
         },
       }}
       rounded={'md'}
       border={0}
       shadow={'md'}
-      cursor={'pointer'}
       _hover={{ shadow: 'xl' }}
       transition={'.2s'}
-      onClick={() => handleProjectClick(project)}
     >
-      <CardBody p={4}>
+      <CardBody p={4} onClick={() => handleProjectClick(project)}>
         <Box h={'40'} p={0} rounded={'md'} overflow={'hidden'}>
           <Image
+            cursor={'pointer'}
             src={project.image}
             alt={project.image}
             rounded={'lg'}
@@ -58,13 +56,15 @@ export default function ProjectsCard(props) {
           />
         </Box>
         <Stack mt={'3'} spacing={'3'} justify={'end'}>
-          <Heading size={'md'}>{project.title}</Heading>
-          <Flex gap={2}>
+          <Heading size={'md'} cursor={'pointer'}>
+            {project.title}
+          </Heading>
+          <Flex gap={2} onClick={(e) => e.stopPropagation()}>
             {project.techStack.map((tech, i) => (
               <SkillsImage image={tech.tech} size={6} key={i} />
             ))}
           </Flex>
-          <Text>
+          <Text onClick={(e) => e.stopPropagation()}>
             {project.description.substring(0, 70)}
             ...
           </Text>
@@ -80,16 +80,16 @@ export default function ProjectsCard(props) {
         <Button
           ml={'-3'}
           rightIcon={<ArrowForwardIcon boxSize={4} />}
-          variant={'solid'}
+          variant={'ghost'}
           color={'#6366f1'}
           as={motion.a}
           bg={'transparent'}
           whileTap={{ scale: 0.9 }}
-          transition=".2s linear"
+          transition={'.2s linear'}
           href={project.demo}
           aria-label={`demo project ${project.title}`}
-          target="_blank"
-          _dark={{ _hover: { color: 'cyan' } }}
+          target={'_blank'}
+          _hover={{ bg: 'gray.200', _dark: { bg: 'gray.700', color: 'cyan' } }}
         >
           Live demo
         </Button>
@@ -97,7 +97,7 @@ export default function ProjectsCard(props) {
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
           transition={{ ease: 'easeInOut' }}
-          target="_blank"
+          target={'_blank'}
           href={project.repo}
           aria-label={project.repo}
         >

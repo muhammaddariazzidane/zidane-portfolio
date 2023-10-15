@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <Box
-      shadow={'md'}
+      shadow={'xs'}
       as={motion.div}
       initial={{ y: -200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
