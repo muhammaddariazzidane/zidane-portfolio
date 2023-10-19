@@ -9,7 +9,7 @@ export default function ProjectSkeleton() {
         px={12}
         mt={'24'}
         flexWrap={'wrap'}
-        justifyContent={'center'}
+        justify={'center'}
         display={'flex'}
         gap={4}
       >

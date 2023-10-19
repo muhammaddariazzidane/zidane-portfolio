@@ -4,7 +4,7 @@ import {
   BreadcrumbLink,
   Container,
 } from '@chakra-ui/react';
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 import CertificateSkeleton from '../components/skeleton/CertificateSkeleton';
@@ -12,6 +12,12 @@ import Layout from '../layouts/Layout';
 const Certificate = lazy(() => import('../components/Certificate'));
 
 export default function Certification() {
+  useEffect(() => {
+    scrollTo({
+      behavior: 'smooth',
+      top: 0,
+    });
+  }, []);
   return (
     <Layout>
       <Container maxW={{ lg: 'container.lg', base: 'container.md' }} py={12}>

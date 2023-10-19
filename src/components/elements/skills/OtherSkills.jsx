@@ -2,7 +2,7 @@
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import SkillsImage from '../../images/SkillsImage';
 
-export default function OtherSkills(props) {
+export default function OtherSkills({ motion }) {
   return (
     <Flex
       mt={{ lg: '20', base: '3.5' }}
@@ -15,9 +15,9 @@ export default function OtherSkills(props) {
         maxW={'7rem'}
         rounded={'full'}
         w={'full'}
-        bg="#4f46e5"
+        bg={'#4f46e5'}
         h={10}
-        as={props.motion.div}
+        as={motion.div}
         initial={{ translateX: -50, opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function OtherSkills(props) {
         flexWrap={'wrap'}
       >
         <Box
-          as={props.motion.div}
+          as={motion.div}
           initial={{ translateY: 50 }}
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
@@ -47,7 +47,7 @@ export default function OtherSkills(props) {
           />
         </Box>
         <Box
-          as={props.motion.div}
+          as={motion.div}
           initial={{ translateY: 50 }}
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
@@ -60,7 +60,7 @@ export default function OtherSkills(props) {
         </Box>
 
         <Box
-          as={props.motion.div}
+          as={motion.div}
           initial={{ translateY: 50 }}
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
@@ -72,7 +72,7 @@ export default function OtherSkills(props) {
           />
         </Box>
         <Box
-          as={props.motion.div}
+          as={motion.div}
           initial={{ translateY: 50 }}
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
@@ -81,6 +81,18 @@ export default function OtherSkills(props) {
             image={'icons/Jest.svg'}
             size={{ lg: 12, base: 10 }}
             title={'Jest'}
+          />
+        </Box>
+        <Box
+          as={motion.div}
+          initial={{ translateY: 50 }}
+          whileInView={{ translateY: 0 }}
+          viewport={{ once: true }}
+        >
+          <SkillsImage
+            image={'icons/vitest.png'}
+            size={{ lg: 12, base: 10 }}
+            title={'Vitest'}
           />
         </Box>
       </Flex>

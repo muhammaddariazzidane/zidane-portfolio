@@ -9,31 +9,21 @@ import {
 
 export default function SkillSkeleton() {
   return (
-    <Box paddingY={12} mt={5} pos={'relative'} id="skills">
-      <Skeleton height={50} maxW={40} w={'full'} mx={'auto'} />
+    <Box py={12} mt={5} pos={'relative'} id="skills">
+      <Skeleton h={14} maxW={40} w={'full'} mx={'auto'} />
 
       <Container
-        maxWidth={{
+        maxW={{
           md: 'container.md',
           lg: 'container.lg',
           base: 'container.lg',
         }}
-        width={'full'}
+        w={'full'}
       >
-        <Flex
-          marginTop={'24'}
-          justifyContent={'space-between'}
-          flexWrap={'wrap'}
-        >
-          <Center
-            hideBelow={'lg'}
-            maxW={'8rem'}
-            width={'full'}
-            padding={2}
-            h={12}
-          >
+        <Flex mt={'20'} justify={'space-between'} flexWrap={'wrap'}>
+          <Center hideBelow={'lg'} maxW={'8rem'} w={'full'} p={2} h={12}>
             <Skeleton
-              height={50}
+              h={50}
               rounded={'full'}
               maxW={40}
               w={'full'}
@@ -41,29 +31,31 @@ export default function SkillSkeleton() {
             />
           </Center>
           <Flex
-            maxWidth={'52rem'}
+            maxW={'52rem'}
             width={'full'}
-            justifyContent={{ base: 'center', lg: 'start', md: 'center' }}
+            justify={{ base: 'center', lg: 'start', md: 'center' }}
             gap="7"
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
           </Flex>
         </Flex>
         <Flex
           marginTop={{ lg: '16', base: '3.5' }}
-          justifyContent={'space-between'}
+          justify={'space-between'}
           flexWrap={'wrap'}
         >
           <Center
@@ -74,7 +66,7 @@ export default function SkillSkeleton() {
             h={12}
           >
             <Skeleton
-              height={50}
+              h={50}
               rounded={'full'}
               maxW={40}
               w={'full'}
@@ -82,26 +74,27 @@ export default function SkillSkeleton() {
             />
           </Center>
           <Flex
-            maxWidth={'52rem'}
+            maxW={'52rem'}
             width={'full'}
-            justifyContent={{ base: 'center', lg: 'start', md: 'center' }}
+            justify={{ base: 'center', lg: 'start', md: 'center' }}
             gap="7"
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
           </Flex>
         </Flex>
         <Flex
           marginTop={{ lg: '16', base: '3.5' }}
-          justifyContent={'space-between'}
+          justify={'space-between'}
           flexWrap={'wrap'}
         >
           <Center
@@ -112,7 +105,7 @@ export default function SkillSkeleton() {
             h={12}
           >
             <Skeleton
-              height={50}
+              h={50}
               rounded={'full'}
               maxW={40}
               w={'full'}
@@ -120,16 +113,18 @@ export default function SkillSkeleton() {
             />
           </Center>
           <Flex
-            maxWidth={'52rem'}
+            maxW={'52rem'}
             width={'full'}
-            justifyContent={{ base: 'center', lg: 'start', md: 'center' }}
+            justify={{ base: 'center', lg: 'start', md: 'center' }}
             gap="7"
             alignItems={'center'}
             flexWrap={'wrap'}
           >
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
-            <SkeletonCircle size={12} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
           </Flex>
         </Flex>
       </Container>

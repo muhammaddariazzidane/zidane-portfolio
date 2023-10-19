@@ -137,6 +137,30 @@ export default function FrontendSkills({ motion }) {
           viewport={{ once: true }}
         >
           <SkillsImage
+            image={'icons/nextjs.png'}
+            size={{ lg: 12, base: 10 }}
+            title={'Next js'}
+          />
+        </Box>
+        <Box
+          as={motion.div}
+          initial={{ translateY: 50 }}
+          whileInView={{ translateY: 0 }}
+          viewport={{ once: true }}
+        >
+          <SkillsImage
+            image={'icons/redux.png'}
+            size={{ lg: 12, base: 10 }}
+            title={'Redux'}
+          />
+        </Box>
+        <Box
+          as={motion.div}
+          initial={{ translateY: 50 }}
+          whileInView={{ translateY: 0 }}
+          viewport={{ once: true }}
+        >
+          <SkillsImage
             image={'icons/Alpinejs.png'}
             size={{ lg: 12, base: 10 }}
             title={'Alpine js'}

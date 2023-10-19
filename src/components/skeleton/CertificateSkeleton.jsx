@@ -1,4 +1,4 @@
-import { Box, Container, Skeleton } from '@chakra-ui/react';
+import { Box, Center, Container, Skeleton } from '@chakra-ui/react';
 
 export default function CertificateSkeleton() {
   return (
@@ -7,7 +7,7 @@ export default function CertificateSkeleton() {
         {location.pathname == '/' ? (
           <Skeleton
             mt={{ lg: 16 }}
-            height={20}
+            h={20}
             maxW={'48'}
             w={'full'}
             rounded={'md'}
@@ -17,7 +17,7 @@ export default function CertificateSkeleton() {
         ) : (
           <Skeleton
             mt={{ lg: 16 }}
-            height={7}
+            h={7}
             maxW={'48'}
             w={'full'}
             rounded={'md'}
@@ -25,7 +25,7 @@ export default function CertificateSkeleton() {
           />
         )}
       </Container>
-      <Container maxW={'container.lg'} mt={12}>
+      <Container maxW={'container.lg'} px={4} mt={12}>
         <Box
           display={'flex'}
           justifyContent={'center'}
@@ -34,7 +34,11 @@ export default function CertificateSkeleton() {
         >
           {location.pathname == '/' ? (
             <>
-              <Skeleton h={'12'} mt={5} maxW={'32'} w={'full'} />
+              <Skeleton h={'52'} maxW={'xs'} w={'full'} />
+              <Skeleton h={'52'} maxW={'xs'} w={'full'} />
+              <Skeleton h={'52'} maxW={'xs'} w={'full'} />
+              <Skeleton h={'52'} maxW={'xs'} w={'full'} />
+              <Skeleton h={'52'} maxW={'xs'} w={'full'} />
             </>
           ) : (
             <>
@@ -66,6 +70,9 @@ export default function CertificateSkeleton() {
             </>
           )}
         </Box>
+        <Center mt={7}>
+          <Skeleton h={9} w={24} />
+        </Center>
       </Container>
     </Box>
   );

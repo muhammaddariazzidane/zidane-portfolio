@@ -130,6 +130,18 @@ export default function BackendSkills(props) {
             title={'Node js'}
           />
         </Box>
+        <Box
+          as={props.motion.div}
+          initial={{ translateY: 50 }}
+          whileInView={{ translateY: 0 }}
+          viewport={{ once: true }}
+        >
+          <SkillsImage
+            image={'icons/hapijs.png'}
+            size={{ lg: 12, base: 10 }}
+            title={'Node js'}
+          />
+        </Box>
       </Flex>
     </Flex>
   );

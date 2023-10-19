@@ -3,49 +3,50 @@ export default function NavbarSkeleton() {
   return (
     <Box shadow={'md'} w={'100%'}>
       <Progress size="xs" colorScheme={'purple'} isIndeterminate />
-      <Container maxW={'container.lg'} py={7}>
+      <Container maxW={'container.lg'} py={{ lg: 5, base: 4 }}>
         <Flex justify={'space-between'} alignItems={'center'}>
-          <Skeleton ml={2} h={8} maxW={40} rounded={'full'} w={'full'} />
+          <Skeleton ml={2} h={8} maxW={64} rounded={'full'} w={'full'} />
           <Skeleton
             h={7}
             hideBelow={'md'}
             rounded={'full'}
-            ml={44}
-            maxW={16}
+            ml={24}
+            maxW={14}
             w={'full'}
           />
           <Skeleton
             h={7}
             hideBelow={'md'}
             rounded={'full'}
-            maxW={16}
+            maxW={14}
             w={'full'}
           />
           <Skeleton
             h={7}
             hideBelow={'md'}
             rounded={'full'}
-            maxW={16}
+            maxW={14}
             w={'full'}
           />
           <Skeleton
             h={7}
             hideBelow={'md'}
             rounded={'full'}
-            maxW={16}
+            maxW={14}
             w={'full'}
           />
           <Skeleton
             h={7}
-            mr={20}
+            mr={28}
             rounded={'full'}
             hideBelow={'md'}
-            maxW={16}
+            maxW={14}
             w={'full'}
           />
           <Skeleton
-            h={7}
-            maxW={7}
+            h={8}
+            maxW={8}
+            mr={{ lg: 2, base: 1 }}
             rounded={{ lg: 'full', md: 'md', sm: 'md', base: 'md' }}
             w={'full'}
           />

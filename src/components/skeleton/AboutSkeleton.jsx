@@ -6,7 +6,7 @@ export default function AboutSkeleton() {
       <Container maxW={'container.lg'}>
         <Skeleton
           mt={{ lg: 16 }}
-          height={16}
+          h={16}
           maxW={'44'}
           w={'full'}
           rounded={'md'}
@@ -18,7 +18,7 @@ export default function AboutSkeleton() {
       <Box
         px={12}
         mt={'6'}
-        justifyContent={'center'}
+        justify={'center'}
         flexWrap={'wrap'}
         display={'flex'}
         gap={4}
