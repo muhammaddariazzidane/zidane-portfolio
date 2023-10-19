@@ -18,7 +18,6 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <NavbarSkeleton />
       <Suspense fallback={<NavbarSkeleton />}>
         <Progress
           aria-label={'loading....'}
