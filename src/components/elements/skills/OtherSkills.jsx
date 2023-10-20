@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import SkillsImage from '../../images/SkillsImage';
+import otherSkills from '../../../services/otherSkills';
+import SkillsItem from '../../SkillsItem';
 
 export default function OtherSkills({ motion }) {
   return (
@@ -34,67 +36,15 @@ export default function OtherSkills({ motion }) {
         alignItems={'center'}
         flexWrap={'wrap'}
       >
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Vscode.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Visual Studio Code'}
+        {otherSkills?.map((skill) => (
+          <SkillsItem
+            key={skill.id}
+            skill={skill}
+            Box={Box}
+            SkillsImage={SkillsImage}
+            motion={motion}
           />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Git.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Git'}
-          />
-        </Box>
-
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Axios.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Axios'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Jest.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Jest'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/vitest.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Vitest'}
-          />
-        </Box>
+        ))}
       </Flex>
     </Flex>
   );

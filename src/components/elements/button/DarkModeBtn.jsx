@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { IconButton } from '@chakra-ui/react';
 import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 import { motion } from 'framer-motion';
-// eslint-disable-next-line react/prop-types
 export default function DarkModeBtn({ colorMode, toggleColorMode }) {
   return (
     <IconButton

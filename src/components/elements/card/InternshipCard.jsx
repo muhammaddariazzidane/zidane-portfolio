@@ -9,9 +9,10 @@ import {
   StepTitle,
 } from '@chakra-ui/react';
 
-export default function InternshipCard({ i, internship, BsBuildingsFill }) {
+export default function InternshipCard({ internship, BsBuildingsFill }) {
+  const { experience } = internship;
   return (
-    <Step key={i}>
+    <Step>
       <StepIndicator>
         <StepStatus
           complete={<BsBuildingsFill />}
@@ -21,8 +22,8 @@ export default function InternshipCard({ i, internship, BsBuildingsFill }) {
       </StepIndicator>
 
       <Box flexShrink="0">
-        {internship.experience?.map((job, i) => (
-          <div key={i}>
+        {experience?.map((job) => (
+          <div key={job.id}>
             <StepTitle as={'h1'}>{job.company}</StepTitle>
             <StepDescription>{job.job}</StepDescription>
           </div>

@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import SkillsImage from '../../images/SkillsImage';
+import backEndSkills from '../../../services/backEndSkills';
+import SkillsItem from '../../SkillsItem';
 
-export default function BackendSkills(props) {
+export default function BackendSkills({ motion }) {
   return (
     <Flex
       mt={{ lg: '16', base: '3.5' }}
@@ -16,7 +18,7 @@ export default function BackendSkills(props) {
         w={'full'}
         bg="#4f46e5"
         h={10}
-        as={props.motion.div}
+        as={motion.div}
         initial={{ translateX: -50, opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -33,115 +35,15 @@ export default function BackendSkills(props) {
         alignItems={'center'}
         flexWrap={'wrap'}
       >
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Py.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Python'}
+        {backEndSkills?.map((skill) => (
+          <SkillsItem
+            key={skill.id}
+            skill={skill}
+            Box={Box}
+            SkillsImage={SkillsImage}
+            motion={motion}
           />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Php.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'PHP'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Mysql.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'MySQL'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Expressjs.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Express js'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Flask.webp'}
-            size={{ lg: 12, base: 10 }}
-            title={'Flask'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Ci.webp'}
-            size={{ lg: 12, base: 10 }}
-            title={'Codeigniter'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          _dark={{ color: 'red' }}
-        >
-          <SkillsImage
-            image={'icons/Laravel.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Laravel'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Nodejs.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Node js'}
-          />
-        </Box>
-        <Box
-          as={props.motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/hapijs.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Node js'}
-          />
-        </Box>
+        ))}
       </Flex>
     </Flex>
   );

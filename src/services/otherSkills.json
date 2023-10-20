@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "image": "icons/Vscode.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Visual Studio Code"
+  },
+  {
+    "id": 1,
+    "image": "icons/Git.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Git"
+  },
+  {
+    "id": 2,
+    "image": "icons/Axios.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Axios"
+  },
+  {
+    "id": 3,
+    "image": "icons/Jest.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Jest"
+  },
+  {
+    "id": 4,
+    "image": "icons/vitest.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Vitest"
+  }
+]

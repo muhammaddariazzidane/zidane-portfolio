@@ -17,8 +17,12 @@ export default function Experience() {
           My Education <MdSchool style={{ display: 'inline' }} />
         </Heading>
         <Stepper index={activeStep} orientation="vertical" h={'32'} gap="0">
-          {steps.map((education, i) => (
-            <EducationCard MdSchool={MdSchool} education={education} key={i} />
+          {steps?.map((education) => (
+            <EducationCard
+              MdSchool={MdSchool}
+              education={education}
+              key={education.id}
+            />
           ))}
         </Stepper>
       </Box>
@@ -35,11 +39,11 @@ export default function Experience() {
           h={'32'}
           gap="0"
         >
-          {steps.map((internship, i) => (
+          {steps?.map((internship) => (
             <InternshipCard
               BsBuildingsFill={BsBuildingsFill}
               internship={internship}
-              key={i}
+              key={internship.id}
             />
           ))}
         </Stepper>

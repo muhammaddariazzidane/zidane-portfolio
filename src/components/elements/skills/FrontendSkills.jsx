@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import SkillsImage from '../../images/SkillsImage';
+import frontEndSkills from '../../../services/frontEndSkills';
+import SkillsItem from '../../SkillsItem';
 
 export default function FrontendSkills({ motion }) {
   return (
@@ -29,167 +31,15 @@ export default function FrontendSkills({ motion }) {
         alignItems={'center'}
         flexWrap={'wrap'}
       >
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{
-            translateY: 0,
-          }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Html.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'HTML'}
+        {frontEndSkills?.map((skill) => (
+          <SkillsItem
+            key={skill.id}
+            skill={skill}
+            Box={Box}
+            SkillsImage={SkillsImage}
+            motion={motion}
           />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Css.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'CSS'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          borderRadius={20}
-        >
-          <SkillsImage
-            image={'icons/Js.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Javascript'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Bootstrap.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Bootstrap '}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Tailwind.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'TailwindCSS'}
-          />
-        </Box>
-
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Chakraui.png'}
-            rounded={'full'}
-            size={{ lg: 12, base: 10 }}
-            title={'Chakra-ui'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Daisyui.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Daisyui'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/React.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'React js'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/nextjs.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Next js'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/redux.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Redux'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Alpinejs.png'}
-            size={{ lg: 12, base: 10 }}
-            title={'Alpine js'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Vercel.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Vercel'}
-          />
-        </Box>
-        <Box
-          as={motion.div}
-          initial={{ translateY: 50 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-        >
-          <SkillsImage
-            image={'icons/Netlify.svg'}
-            size={{ lg: 12, base: 10 }}
-            title={'Netlify'}
-          />
-        </Box>
+        ))}
       </Flex>
     </Flex>
   );

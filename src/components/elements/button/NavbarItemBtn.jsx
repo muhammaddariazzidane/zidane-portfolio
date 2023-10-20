@@ -34,7 +34,7 @@ export default function NavbarItemBtn(props) {
 
   return (
     <>
-      {buttons.map((button, index) => (
+      {buttons?.map((button, index) => (
         <Button
           key={index}
           variant={'ghost'}

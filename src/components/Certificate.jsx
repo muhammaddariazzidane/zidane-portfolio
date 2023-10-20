@@ -41,10 +41,10 @@ export default function Certificate() {
           flexWrap={'wrap'}
         >
           {certificates
-            .map((item, index) => (
+            ?.map((item) => (
               <CertificateCard
                 item={item}
-                key={index}
+                key={item.id}
                 isOpen={isOpen}
                 onClose={onClose}
                 selectedCertificate={selectedCertificate}

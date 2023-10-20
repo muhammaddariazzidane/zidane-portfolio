@@ -17,7 +17,6 @@ import { BiLinkExternal } from 'react-icons/bi';
 
 export default function ProjectModal(props) {
   const { onClose, isOpen, selectedProject, motion } = props;
-
   if (!selectedProject) {
     return null;
   }
@@ -47,8 +46,8 @@ export default function ProjectModal(props) {
             {selectedProject.title}
           </Text>
           <Flex my={3} gap={2}>
-            {selectedProject.techStack.map((tech, i) => (
-              <SkillsImage image={tech.tech} size={7} key={i} />
+            {selectedProject.techStack.map((tech) => (
+              <SkillsImage image={tech.tech} size={7} key={tech.id} />
             ))}
           </Flex>
           <Text fontSize={'md'}>{selectedProject.description}</Text>

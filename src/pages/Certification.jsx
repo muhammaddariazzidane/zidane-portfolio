@@ -14,7 +14,6 @@ const Certificate = lazy(() => import('../components/Certificate'));
 export default function Certification() {
   useEffect(() => {
     scrollTo({
-      behavior: 'smooth',
       top: 0,
     });
   }, []);

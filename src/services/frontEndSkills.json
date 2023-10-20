@@ -1,0 +1,126 @@
+[
+  {
+    "id": 0,
+    "image": "icons/Html.svg",
+    "size": { "lg": 12, "base": 10 },
+    "title": "HTML"
+  },
+  {
+    "id": 1,
+    "image": "icons/Css.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "CSS"
+  },
+  {
+    "id": 2,
+    "image": "icons/Js.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Javascript"
+  },
+  {
+    "id": 3,
+    "image": "icons/Bootstrap.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Bootstrap"
+  },
+  {
+    "id": 4,
+    "image": "icons/Tailwind.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "TailwindCSS"
+  },
+  {
+    "id": 5,
+    "image": "icons/Chakraui.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Chakra-ui",
+    "rounded": "full"
+  },
+  {
+    "id": 6,
+    "image": "icons/Daisyui.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Daisyui"
+  },
+  {
+    "id": 7,
+    "image": "icons/React.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "React js"
+  },
+  {
+    "id": 8,
+    "image": "icons/nextjs.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Next js"
+  },
+  {
+    "id": 9,
+    "image": "icons/redux.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Redux"
+  },
+  {
+    "id": 10,
+    "image": "icons/pwa.webp",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Progressive Web App"
+  },
+  {
+    "id": 11,
+    "image": "icons/Alpinejs.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Alpine js"
+  },
+  {
+    "id": 12,
+    "image": "icons/Vercel.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Vercel"
+  },
+  {
+    "id": 13,
+    "image": "icons/Netlify.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Netlify"
+  }
+]

@@ -17,6 +17,7 @@ import SkillsImage from '../../images/SkillsImage';
 
 export default function ProjectsCard(props) {
   const { handleProjectClick, motion, project } = props;
+  const { title, image, description, techStack, demo, repo } = project;
 
   return (
     <Card
@@ -40,8 +41,8 @@ export default function ProjectsCard(props) {
         <Box h={'40'} p={0} rounded={'md'} overflow={'hidden'}>
           <Image
             cursor={'pointer'}
-            src={project.image}
-            alt={project.image}
+            src={image}
+            alt={image}
             rounded={'lg'}
             h={'full'}
             w={'full'}
@@ -57,15 +58,15 @@ export default function ProjectsCard(props) {
         </Box>
         <Stack mt={'3'} spacing={'3'} justify={'end'}>
           <Heading size={'md'} cursor={'pointer'}>
-            {project.title}
+            {title}
           </Heading>
           <Flex gap={2} onClick={(e) => e.stopPropagation()}>
-            {project.techStack.map((tech, i) => (
-              <SkillsImage image={tech.tech} size={6} key={i} />
+            {techStack?.map((tech) => (
+              <SkillsImage image={tech.tech} size={6} key={tech.id} />
             ))}
           </Flex>
           <Text onClick={(e) => e.stopPropagation()}>
-            {project.description.substring(0, 70)}
+            {description.substring(0, 70)}
             ...
           </Text>
         </Stack>
@@ -86,8 +87,8 @@ export default function ProjectsCard(props) {
           bg={'transparent'}
           whileTap={{ scale: 0.9 }}
           transition={'.2s linear'}
-          href={project.demo}
-          aria-label={`demo project ${project.title}`}
+          href={demo}
+          aria-label={`demo project ${title}`}
           target={'_blank'}
           _hover={{ bg: 'gray.200', _dark: { bg: 'gray.700', color: 'cyan' } }}
         >
@@ -98,8 +99,8 @@ export default function ProjectsCard(props) {
           whileHover={{ scale: 1.1 }}
           transition={{ ease: 'easeInOut' }}
           target={'_blank'}
-          href={project.repo}
-          aria-label={project.repo}
+          href={repo}
+          aria-label={repo}
         >
           <FaGithub size={24} />
         </motion.a>

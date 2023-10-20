@@ -24,9 +24,13 @@ export default function BackToTopBtn() {
       bottom={4}
       right={4}
     >
-      <a href={'#'} aria-label={'Back To Top'}>
+      <button
+        type="button"
+        onClick={() => scrollTo({ top: 0 })}
+        aria-label={'Back To Top'}
+      >
         <FaRegArrowAltCircleUp size={32} />
-      </a>
+      </button>
     </Box>
   );
 }

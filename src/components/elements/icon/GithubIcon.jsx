@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 export default function GithubIcon({ IconButton, motion, FaGithub }) {
   return (
     <IconButton

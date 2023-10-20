@@ -1,19 +1,23 @@
 [
   {
+    "id": 0,
     "title": "SMK NEGERI 1 TIRTAJAYA",
     "description": "Rekayasa Perangkat Lunak",
     "experience": [
       {
+        "id": 0,
         "company": "PT Muncul Surya Prima",
         "job": "Operator Produksi"
       }
     ]
   },
   {
+    "id": 1,
     "title": "Universitas Bina Sarana Informatika",
     "description": "Sistem Informasi",
     "experience": [
       {
+        "id": 1,
         "company": "Studi Independen Dicoding Batch 5",
         "job": "Pengembang Front-end Web dan Back-end"
       }

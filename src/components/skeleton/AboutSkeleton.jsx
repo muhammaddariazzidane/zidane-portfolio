@@ -15,11 +15,12 @@ export default function AboutSkeleton() {
         />
         <Skeleton h={'60'} />
       </Container>
-      <Box
+      <Container
+        maxW={'container.md'}
         px={12}
         mt={'6'}
         justify={'center'}
-        flexWrap={'wrap'}
+        flexWrap={{ base: 'wrap', sm: 'nowrap' }}
         display={'flex'}
         gap={4}
       >
@@ -27,17 +28,17 @@ export default function AboutSkeleton() {
           maxW={'sm'}
           rounded={'md'}
           w={'full'}
-          minH={'60'}
+          minH={'52'}
           h={'full'}
         />
         <Skeleton
           maxW={'sm'}
           rounded={'md'}
           w={'full'}
-          minH={'60'}
+          minH={'52'}
           h={'full'}
         />
-      </Box>
+      </Container>
     </Box>
   );
 }

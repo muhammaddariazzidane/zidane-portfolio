@@ -9,9 +9,9 @@ import {
   StepTitle,
 } from '@chakra-ui/react';
 
-export default function EducationCard({ MdSchool, education, i }) {
+export default function EducationCard({ MdSchool, education }) {
   return (
-    <Step key={i}>
+    <Step>
       <StepIndicator>
         <StepStatus
           complete={<MdSchool />}

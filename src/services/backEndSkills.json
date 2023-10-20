@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "image": "icons/Py.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Python"
+  },
+  {
+    "id": 1,
+    "image": "icons/Php.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "PHP"
+  },
+  {
+    "id": 2,
+    "image": "icons/Mysql.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "MySQL"
+  },
+  {
+    "id": 3,
+    "image": "icons/Expressjs.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Express js"
+  },
+  {
+    "id": 4,
+    "image": "icons/Flask.webp",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Flask"
+  },
+  {
+    "id": 5,
+    "image": "icons/Ci.webp",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Codeigniter"
+  },
+  {
+    "id": 6,
+    "image": "icons/Laravel.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Laravel"
+  },
+  {
+    "id": 7,
+    "image": "icons/Nodejs.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Node js"
+  },
+  {
+    "id": 8,
+    "image": "icons/hapijs.png",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "Hapi js"
+  }
+]

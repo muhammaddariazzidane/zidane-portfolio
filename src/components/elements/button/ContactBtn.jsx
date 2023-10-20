@@ -18,7 +18,8 @@ export default function ContactBtn({ Button, ArrowForwardIcon, motion }) {
       transition={`.2s linear`}
       href={'#contact'}
       whileTap={{ scale: 0.9 }}
-      aria-label={'contact'}
+      aria-label={'Contact Me'}
+      role="link"
     >
       Contact Me
     </Button>

@@ -51,6 +51,7 @@ export default function SkillSkeleton() {
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
           </Flex>
         </Flex>
         <Flex
