@@ -43,5 +43,14 @@
       "base": 10
     },
     "title": "Vitest"
+  },
+  {
+    "id": 5,
+    "image": "icons/Mysql.svg",
+    "size": {
+      "lg": 12,
+      "base": 10
+    },
+    "title": "MySQL"
   }
 ]

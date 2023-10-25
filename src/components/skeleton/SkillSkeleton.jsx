@@ -90,7 +90,6 @@ export default function SkillSkeleton() {
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
-            <SkeletonCircle size={{ lg: 12, base: 10 }} />
           </Flex>
         </Flex>
         <Flex
@@ -121,6 +120,7 @@ export default function SkillSkeleton() {
             alignItems={'center'}
             flexWrap={'wrap'}
           >
+            <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
             <SkeletonCircle size={{ lg: 12, base: 10 }} />
